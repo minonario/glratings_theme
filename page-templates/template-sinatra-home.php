@@ -12,6 +12,7 @@
 get_header();
 
 ?>
+<h1 class="entry-title"><?php echo get_the_title() ?></h1>
 <div class="page-header">
 <?php if( have_rows('carousel') ): ?>
     <?php while( have_rows('carousel') ): the_row(); 
@@ -82,15 +83,15 @@ if( have_rows('contenido') ):
     <div data-test="container" class="container">
        <div data-test="row" class="row">
           <div data-test="col" class="col title">
-             <h1><?php echo get_sub_field('titulo')?></h1>
+             <h2><?php echo get_sub_field('titulo')?></h2>
           </div>
        </div>
       
       <?php echo do_shortcode(get_sub_field('shortcode'));?>
 
        <div data-test="row" class="row row-button">
-         <a href="<?php echo get_sub_field('enlace')?>" target="_blank">
-             <button data-test="button" type="button" class="btn-default btn Ripple-parent btn-invisible">
+         <a href="<?php echo get_sub_field('enlace')?>" target="_blank" aria-label="Ver más en el siguiente enlace">
+             <button data-test="button" type="button" class="btn-default btn Ripple-parent btn-invisible" aria-label="Ver más">
                 <i data-test="fa" class="fa fa-plus-circle"></i>
                 <div data-test="waves" class="Ripple " style="top:0px;left:0px;width:0px;height:0px"></div>
              </button>

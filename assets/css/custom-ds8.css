@@ -692,3 +692,6 @@ body.modal-open {
 .single-leynormativa .title {
     max-width: 100%
 }
+#page .entry-title{
+  display: none
+}
