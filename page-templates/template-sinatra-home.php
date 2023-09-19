@@ -89,7 +89,7 @@ if( have_rows('contenido') ):
       <?php echo do_shortcode(get_sub_field('shortcode'));?>
 
        <div data-test="row" class="row row-button">
-         <a href="<?php echo get_sub_field('enlace')?>" target="_blank">
+         <a href="<?php echo get_sub_field('enlace')?>" <?php echo(get_sub_field('mantener_en_pagina') ? 'target="_blank"' : '')?>>
              <button data-test="button" type="button" class="btn-default btn Ripple-parent btn-invisible">
                 <i data-test="fa" class="fa fa-plus-circle"></i>
                 <div data-test="waves" class="Ripple " style="top:0px;left:0px;width:0px;height:0px"></div>
