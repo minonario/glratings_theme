@@ -24,7 +24,6 @@
 
 <?php do_action( 'sinatra_before_page_wrapper' ); ?>
 <div id="page" class="hfeed site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'sinatra' ); ?></a>
 
 	<?php do_action( 'sinatra_before_masthead' ); ?>
 
